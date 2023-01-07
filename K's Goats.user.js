@@ -21,8 +21,20 @@ var currentURL = window.location.href;
 if (currentURL.startsWith('https://www.goatlings.com/shops/')) {
   // Find the value on the page
   var value = document.querySelector("#content > center > b:nth-child(8)").textContent;
+
+  // Remove the comma from the value
+  value = value.replace(',', '');
+
+  // Parse the value as a number
+  value = parseFloat(value);
+
+  // Multiply the value by 0.8
   var result = value * 0.8;
+
+  // Find the input box
   var inputBox = document.querySelector("#content > center > form > input[type=text]:nth-child(2)");
+
+  // Place the result in the input box
   inputBox.value = result;
 }
 else if(currentURL.startsWith('https://www.goatlings.com/ss_mine')){ //I DONT KNOW IF THIS WORKS YET
