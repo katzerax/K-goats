@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         K's Goats
-// @version      0.1
+// @version      0.2
 // @description  Increasing goatlings functionality
 // @author       K
 // @match        https://www.goatlings.com/*
